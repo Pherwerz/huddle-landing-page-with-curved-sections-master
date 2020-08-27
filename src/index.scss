@@ -3,6 +3,18 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+
+  @include respond(phone) {
+    font-size: 40%;
+  }
+
+  @include respond(sm) {
+    font-size: 50%;
+  }
+
+  @include respond(mid) {
+    font-size: 65%;
+  }
 }
 
 *,
@@ -24,6 +36,10 @@ body {
   -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @include respond(phone) {
+    font-size: 1.6rem;
+  }
 }
 
 code {

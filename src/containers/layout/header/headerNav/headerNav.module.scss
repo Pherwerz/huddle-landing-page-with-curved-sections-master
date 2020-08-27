@@ -1,6 +1,12 @@
+@import '../../../../variables';
+
 .headerNav {
   padding: 2rem 0;
   margin-bottom: 10rem;
+
+  @include respond(phone) {
+    padding: 4rem 0;
+  }
 
   &extra {
     display: flex;

@@ -1,16 +1,98 @@
+@import '../../variables';
+
 .features {
+  background-color: #ffffff;
+
+  & img {
+    width: 100%;
+    display: block;
+  }
+
+  &Test {
+    background-color: var(--very-pale-blue);
+  }
+
   &Body {
     display: flex;
     flex-flow: column;
+    display: flex;
+    flex-flow: column;
+    padding: 5rem 0;
+
+    @include respond(phone) {
+      flex-flow: row;
+      align-items: center;
+      padding: 2.5rem 0;
+    }
+
+    &Rev {
+      @include respond(phone) {
+        flex-flow: row-reverse;
+        padding: 10rem 0;
+      }
+
+      & .featuresLeft {
+        @include respond(phone) {
+          align-items: center;
+        }
+      }
+    }
+
+    & > * {
+      flex: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column;
+
+      @include respond(phone) {
+        flex: 1;
+      }
+    }
   }
 
   &Right {
+    @include respond(phone) {
+      order: 1;
+    }
+
     & img {
       width: 100%;
+      margin-bottom: 5rem;
+
+      @include respond(phone) {
+        margin-bottom: 0;
+        width: 80%;
+      }
     }
   }
 
   &Left {
     text-align: center;
+
+    @include respond(phone) {
+      text-align: left;
+      align-items: flex-start;
+    }
+
+    & h3 {
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      font-weight: 700;
+
+      @include respond(phone) {
+        font-size: 4rem;
+      }
+    }
+
+    & p {
+      margin-bottom: 2rem;
+      color: var(--very-dark-cyan);
+      font-weight: 400;
+
+      @include respond(phone) {
+        width: 80%;
+      }
+    }
   }
 }

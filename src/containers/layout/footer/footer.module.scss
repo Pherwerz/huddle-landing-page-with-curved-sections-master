@@ -1,0 +1,51 @@
+@import '../../../variables';
+
+.footer {
+  background-color: var(--very-dark-cyan);
+  color: #ffffff;
+  padding-top: 5rem;
+
+  &Body {
+    display: flex;
+    flex-flow: column;
+
+    @include respond(phone) {
+      flex-flow: row;
+    }
+
+    & > * {
+      @include respond(phone) {
+        flex: 1;
+      }
+    }
+  }
+
+  &Left {
+    margin-bottom: 10rem;
+
+    @include respond(phone) {
+      margin-bottom: 0;
+      order: 1;
+    }
+
+    & h2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+    }
+  }
+
+  &Img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  padding-top: 5rem;
+
+  & a {
+    color: hsl(228, 45%, 44%);
+  }
+}

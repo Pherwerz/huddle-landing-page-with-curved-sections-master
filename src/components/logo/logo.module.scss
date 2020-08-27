@@ -1,5 +1,11 @@
+@import '../../variables';
+
 .logo {
   width: 12rem;
+
+  @include respond(phone) {
+    width: 20rem;
+  }
 
   & img {
     width: 100%;
