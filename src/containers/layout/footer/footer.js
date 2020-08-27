@@ -28,7 +28,7 @@ const contact = [
   }
 ];
 
-const icons = ['facbook'];
+const icons = ['facebook2', 'instagram', 'twitter'];
 
 const footer = () => {
   return (
@@ -48,6 +48,7 @@ const footer = () => {
               send you spam or pass on your email address
             </p>
             <form>
+              <input type="text" />
               <Button>Subscribe</Button>
             </form>
           </div>
@@ -61,11 +62,21 @@ const footer = () => {
             </p>
 
             {contact.map((cur, i) => (
-              <div key={i}>
+              <div className={styles.footerContact} key={i}>
                 <img src={cur.icon} alt={i} />
                 <span>{cur.text}</span>
               </div>
             ))}
+
+            <div className={styles.footerSocial}>
+              {icons.map((cur, i) => (
+                <svg key={i}>
+                  <use
+                    xlinkHref={`${social}#icon-${cur}`}
+                  />
+                </svg>
+              ))}
+            </div>
           </div>
         </Contain>
 
