@@ -9,13 +9,13 @@
     },
     {
       "src": "logo-mobile.svg",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "sizes": "192x192"
     },
     {
       "src": "logo-mobile.svg",
-      "type": "image/png",
-      "sizes": "512x512"
+      "type": "image/svg+xml",
+      "sizes": "32x32"
     }
   ],
   "start_url": ".",
