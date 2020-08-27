@@ -9,13 +9,14 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  font-family: inherit;
   margin: 0;
   padding: 0;
 }
 
 body {
   box-sizing: border-box;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-family: 'Open Sans', sans-serif;
   // font-family: 'Poppins', sans-serif;
   font-weight: 400;

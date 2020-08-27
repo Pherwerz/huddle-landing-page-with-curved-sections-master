@@ -1,0 +1,56 @@
+.headerBottom {
+  &Top {
+    text-align: center;
+    margin-bottom: 5rem;
+
+    & h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    & p {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      color: var(--very-dark-cyan);
+    }
+  }
+
+  &Mid {
+    text-align: center;
+    margin-bottom: 5rem;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  &Btm {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: 10rem;
+
+    & > *:not(:last-child) {
+      margin-bottom: 10rem;
+    }
+
+    &El {
+      & img {
+        height: 2.5rem;
+      }
+
+      & h2 {
+        font-size: 6rem;
+        font-weight: 700;
+      }
+
+      & p {
+        color: #7477a3;
+        font-weight: 400;
+        text-align: center;
+      }
+    }
+  }
+}

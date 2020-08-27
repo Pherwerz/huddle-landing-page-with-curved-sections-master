@@ -1,0 +1,10 @@
+.headerNav {
+  padding: 2rem 0;
+  margin-bottom: 10rem;
+
+  &extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

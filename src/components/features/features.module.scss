@@ -1,0 +1,16 @@
+.features {
+  &Body {
+    display: flex;
+    flex-flow: column;
+  }
+
+  &Right {
+    & img {
+      width: 100%;
+    }
+  }
+
+  &Left {
+    text-align: center;
+  }
+}
